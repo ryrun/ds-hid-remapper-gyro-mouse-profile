@@ -1,0 +1,56 @@
+/* Read gyro axis used for mouse X */
+0xfffa000a input_state
+
+/* Small raw values stay at 0 to suppress drift */
+dup abs 10 gt mul
+
+/* Apply base sensitivity and invert direction */
+-0.002 mul
+
+/* Keep scaled X in temp register 31 */
+31 store
+
+/* Condition: use soft curve only for |x| < 1 */
+31 recall abs 1 lt
+
+/* Soft shaping: sign(x) * (0.5 * |x|) / (1 - 0.5 * |x|) */
+31 recall sign 31 recall abs 0.5 mul 1 31 recall abs 0.5 mul sub div mul
+
+/* Linear fallback for |x| >= 1 */
+31 recall
+
+/* Choose shaped value for small inputs, linear value otherwise */
+ifte
+
+/* Store final mouse X delta in register 1 */
+1 store
+
+/* Read gyro axis used for mouse Y */
+0xfffa0009 input_state
+
+/* Small raw values stay at 0 to suppress drift */
+dup abs 10 gt mul
+
+/* Apply base sensitivity and invert direction */
+-0.002 mul
+
+/* Keep scaled Y in temp register 32 */
+32 store
+
+/* Condition: use soft curve only for |y| < 1 */
+32 recall abs 1 lt
+
+/* Soft shaping: sign(y) * (0.5 * |y|) / (1 - 0.5 * |y|) */
+32 recall sign 32 recall abs 0.5 mul 1 32 recall abs 0.5 mul sub div mul
+
+/* Linear fallback for |y| >= 1 */
+32 recall
+
+/* Choose shaped value for small inputs, linear value otherwise */
+ifte
+
+/* Store final mouse Y delta in register 2 */
+2 store
+
+/* Dummy expression result */
+0
