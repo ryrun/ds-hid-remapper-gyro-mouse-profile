@@ -67,3 +67,11 @@ This repository is mainly meant as a practical profile project:
 - to document the related HID Remapper expressions
 - to move toward a comfortable FPS-style controller layout with touch-activated
   gyro aiming
+
+## My Hardware Setup
+
+![DualSense Edge connected through HID Remapper hardware](./dsedge_hidremapper.jpg)
+
+- DualSense Edge
+- Adafruit Feather RP2040 with USB Host, Type A (5723),
+- Mac mini M4
