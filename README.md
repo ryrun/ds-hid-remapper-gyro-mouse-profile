@@ -46,6 +46,21 @@ drift filtering:
 
 - [expression_1_gyro_calibration.txt](./expressions/expression_1_gyro_calibration.txt)
 
+## HID Remapper
+
+This profile depends directly on the HID Remapper project by Jacek Fedorynski.
+HID Remapper is the hardware and firmware layer that makes this kind of setup
+possible: it can remap HID inputs in hardware, expose custom usages, run
+expressions, and save the resulting configuration to the device itself.
+
+Useful project links:
+
+- HID Remapper website: https://www.remapper.org/
+- HID Remapper manual: https://www.remapper.org/manual/
+- HID Remapper configuration tool: https://www.remapper.org/config/
+- HID Remapper forum: https://forum.remapper.org/
+- HID Remapper GitHub repository: https://github.com/jfedor2/hid-remapper
+
 ## Inspiration
 
 This work is inspired by the Alpakka firmware and control ideas from Input
