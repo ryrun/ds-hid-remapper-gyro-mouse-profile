@@ -1,0 +1,145 @@
+/* Inspired by Alpakka firmware by Input Labs: https://inputlabs.io/ */
+/* Purpose: classify the right stick into exclusive 8DIR outputs using stick angle near full deflection. */
+/* Mappable registers: R11 = up, R12 = up-right, R13 = right, R14 = down-right, R15 = down, R16 = down-left, R17 = left, R18 = up-left. */
+
+/* Store snapped right stick X in R3. */
+0x00010032 input_state_scaled
+128 sub
+0x00010035 input_state_scaled
+128 sub
+abs
+0x00010032 input_state_scaled
+128 sub
+abs
+gt
+0x00010035 input_state_scaled
+128 sub
+abs
+26 lt
+mul
+not
+mul
+3 store
+
+/* Store snapped right stick Y in R4. */
+0x00010035 input_state_scaled
+128 sub
+0x00010032 input_state_scaled
+128 sub
+abs
+0x00010035 input_state_scaled
+128 sub
+abs
+gt
+0x00010032 input_state_scaled
+128 sub
+abs
+26 lt
+mul
+not
+mul
+4 store
+
+/* Compute the polar angle with 0 degrees = up, 90 = right, -90 = left. */
+3 recall
+4 recall
+-1 mul
+atan2
+5 store
+
+/* Compute the snapped stick radius and clamp it to the normalized max. */
+3 recall
+dup mul
+4 recall
+dup mul
+add
+sqrt
+127 min
+6 store
+
+/* Up: angle in [-22.5, 22.5], only near full stick deflection. */
+5 recall
+abs
+22.5 gt
+not
+6 recall
+120 gt
+mul
+11 store
+
+/* Up-right: angle in (22.5, 67.5), only near full stick deflection. */
+5 recall
+22.5 gt
+5 recall
+67.5 lt
+mul
+6 recall
+120 gt
+mul
+12 store
+
+/* Right: angle in [67.5, 112.5], only near full stick deflection. */
+5 recall
+67.5 gt
+5 recall
+112.5 lt
+mul
+6 recall
+120 gt
+mul
+13 store
+
+/* Down-right: angle in (112.5, 157.5), only near full stick deflection. */
+5 recall
+112.5 gt
+5 recall
+157.5 lt
+mul
+6 recall
+120 gt
+mul
+14 store
+
+/* Down: angle in [157.5, 180] or [-180, -157.5], only near full stick deflection. */
+5 recall
+157.5 gt
+5 recall
+-157.5 lt
+bitwise_or
+6 recall
+120 gt
+mul
+15 store
+
+/* Down-left: angle in (-157.5, -112.5), only near full stick deflection. */
+5 recall
+-157.5 gt
+5 recall
+-112.5 lt
+mul
+6 recall
+120 gt
+mul
+16 store
+
+/* Left: angle in [-112.5, -67.5], only near full stick deflection. */
+5 recall
+-112.5 gt
+5 recall
+-67.5 lt
+mul
+6 recall
+120 gt
+mul
+17 store
+
+/* Up-left: angle in (-67.5, -22.5), only near full stick deflection. */
+5 recall
+-67.5 gt
+5 recall
+-22.5 lt
+mul
+6 recall
+120 gt
+mul
+18 store

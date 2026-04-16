@@ -1,0 +1,129 @@
+/* Inspired by Alpakka firmware by Input Labs: https://inputlabs.io/ */
+/* Purpose: classify the left stick into overlapping 4DIR outputs plus inner/outer ring state. */
+/* Mappable registers: R21 = up, R22 = down, R23 = left, R24 = right, R25 = inner, R26 = outer. */
+
+/* Store snapped left stick X in R7. */
+0x00010030 input_state_scaled
+128 sub
+0x00010031 input_state_scaled
+128 sub
+abs
+0x00010030 input_state_scaled
+128 sub
+abs
+gt
+0x00010031 input_state_scaled
+128 sub
+abs
+26 lt
+mul
+not
+mul
+7 store
+
+/* Store snapped left stick Y in R8. */
+0x00010031 input_state_scaled
+128 sub
+0x00010030 input_state_scaled
+128 sub
+abs
+0x00010031 input_state_scaled
+128 sub
+abs
+gt
+0x00010030 input_state_scaled
+128 sub
+abs
+26 lt
+mul
+not
+mul
+8 store
+
+/* Compute the polar angle with 0 degrees = up, 90 = right, -90 = left. */
+7 recall
+8 recall
+-1 mul
+atan2
+9 store
+
+/* Apply radial deadzone and ramp, then store the active radius in R10. */
+7 recall
+dup mul
+8 recall
+dup mul
+add
+sqrt
+127 min
+26 lt
+0
+7 recall
+dup mul
+8 recall
+dup mul
+add
+sqrt
+127 min
+26 sub
+127 mul
+101 div
+ifte
+10 store
+
+/* Up uses the 4DIR overlap sector around 0 degrees. */
+9 recall
+abs
+67.5 gt
+not
+10 recall
+6.35 gt
+mul
+21 store
+
+/* Down uses the 4DIR overlap sector around 180 / -180 degrees. */
+9 recall
+abs
+112.5 gt
+10 recall
+6.35 gt
+mul
+22 store
+
+/* Left uses the 4DIR overlap sector from -157.5 to -22.5 degrees. */
+9 recall
+-157.5 gt
+9 recall
+-22.5 lt
+mul
+10 recall
+6.35 gt
+mul
+23 store
+
+/* Right uses the 4DIR overlap sector from 22.5 to 157.5 degrees. */
+9 recall
+22.5 gt
+9 recall
+157.5 lt
+mul
+10 recall
+6.35 gt
+mul
+24 store
+
+/* Inner ring is active below 0.75 radius, after the activity threshold. */
+10 recall
+6.35 gt
+10 recall
+95.25 lt
+mul
+25 store
+
+/* Outer ring is active at or above 0.75 radius, after the activity threshold. */
+10 recall
+6.35 gt
+10 recall
+95.25 lt
+not
+mul
+26 store
