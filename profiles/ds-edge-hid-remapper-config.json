@@ -1,581 +1,513 @@
 {
-    "version": 18,
-    "unmapped_passthrough_layers": [],
-    "partial_scroll_timeout": 1000000,
-    "tap_hold_threshold": 200000,
-    "gpio_debounce_time_ms": 5,
-    "interval_override": 0,
-    "our_descriptor_number": 0,
-    "ignore_auth_dev_inputs": false,
-    "macro_entry_duration": 1,
-    "gpio_output_mode": 0,
-    "input_labels": 0,
-    "normalize_gamepad_inputs": false,
-    "mappings": [
-        {
-            "target_usage": "0x00010030",
-            "source_usage": "0xfff50001",
-            "scaling": 1000,
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "target_usage": "0x00010031",
-            "source_usage": "0xfff50002",
-            "scaling": 700,
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0x00090008",
-            "target_usage": "0x00090001",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0x00090007",
-            "target_usage": "0x00090002",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0x00090002",
-            "target_usage": "0x00070009",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0x00090003",
-            "target_usage": "0x00070019",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0x00090001",
-            "target_usage": "0x00070015",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0x00090004",
-            "target_usage": "0x00070017",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff90001",
-            "target_usage": "0x00070050",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff90002",
-            "target_usage": "0x0007004f",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff90003",
-            "target_usage": "0x00070052",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff90004",
-            "target_usage": "0x00070051",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0x00090005",
-            "target_usage": "0x00070014",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0x00090006",
-            "target_usage": "0x00070008",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfffa0011",
-            "target_usage": "0x0007002c",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfffa0010",
-            "target_usage": "0x000700e1",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0x0009000e",
-            "target_usage": "0x00070010",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0x0009000a",
-            "target_usage": "0x00070029",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0x00090009",
-            "target_usage": "0x0007002b",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff50015",
-            "target_usage": "0x0007001a",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff50016",
-            "target_usage": "0x00070016",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff50017",
-            "target_usage": "0x00070004",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff50018",
-            "target_usage": "0x00070007",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0x0009000b",
-            "target_usage": "0x0007000d",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0x0009000c",
-            "target_usage": "0x00070027",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff50019",
-            "target_usage": "0x0007000f",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff5000b",
-            "target_usage": "0x00070021",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff5000c",
-            "target_usage": "0x00070024",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff5000d",
-            "target_usage": "0x00070020",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff5000e",
-            "target_usage": "0x00070023",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff5000f",
-            "target_usage": "0x0007001f",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff50010",
-            "target_usage": "0x00070022",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff50011",
-            "target_usage": "0x0007001e",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        },
-        {
-            "source_usage": "0xfff50012",
-            "target_usage": "0x00070025",
-            "layers": [
-                0
-            ],
-            "sticky": false,
-            "tap": false,
-            "hold": false,
-            "scaling": 1000,
-            "source_port": 0,
-            "target_port": 0
-        }
-    ],
-    "macros": [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
-    ],
-    "expressions": [
-        "/* Read gyro axis used for mouse X */ eol 0xfffa000a input_state eol eol /* Small raw values stay at 0 to suppress drift */ eol dup abs 10000 gt mul eol eol /* Apply base sensitivity and invert direction */ eol -2 mul eol eol /* Require at least one active touch contact */ eol 0xfffa0002 input_state not eol 0xfffa0006 input_state not eol bitwise_or eol mul eol eol /* Keep scaled X in temp register 31 */ eol 31000 store eol eol /* Condition: use soft curve only for |x| < 1 */ eol 31000 recall abs 1000 lt eol eol /* Soft shaping: sign(x) * (0.5 * |x|) / (1 - 0.5 * |x|) */ eol 31000 recall sign 31000 recall abs 500 mul 1000 31000 recall abs 500 mul sub div mul eol eol /* Linear fallback for |x| >= 1 */ eol 31000 recall eol eol /* Choose shaped value for small inputs, linear value otherwise */ eol ifte eol eol /* Store final mouse X delta in register 1 */ eol 1000 store eol eol /* Read gyro axis used for mouse Y */ eol 0xfffa0009 input_state eol eol /* Small raw values stay at 0 to suppress drift */ eol dup abs 10000 gt mul eol eol /* Apply base sensitivity and invert direction */ eol -2 mul eol eol /* Require at least one active touch contact */ eol 0xfffa0002 input_state not eol 0xfffa0006 input_state not eol bitwise_or eol mul eol eol /* Keep scaled Y in temp register 32 */ eol 32000 store eol eol /* Condition: use soft curve only for |y| < 1 */ eol 32000 recall abs 1000 lt eol eol /* Soft shaping: sign(y) * (0.5 * |y|) / (1 - 0.5 * |y|) */ eol 32000 recall sign 32000 recall abs 500 mul 1000 32000 recall abs 500 mul sub div mul eol eol /* Linear fallback for |y| >= 1 */ eol 32000 recall eol eol /* Choose shaped value for small inputs, linear value otherwise */ eol ifte eol eol /* Store final mouse Y delta in register 2 */ eol 2000 store eol eol /* Dummy expression result */ eol 0 eol",
-        "/* Store snapped left stick X in R7. */ eol 0x00010030 input_state_scaled eol 128000 sub eol 0x00010031 input_state_scaled eol 128000 sub eol abs eol 0x00010030 input_state_scaled eol 128000 sub eol abs eol gt eol 0x00010031 input_state_scaled eol 128000 sub eol abs eol 26000 lt eol mul eol not eol mul eol 7000 store eol eol /* Store snapped left stick Y in R8. */ eol 0x00010031 input_state_scaled eol 128000 sub eol 0x00010030 input_state_scaled eol 128000 sub eol abs eol 0x00010031 input_state_scaled eol 128000 sub eol abs eol gt eol 0x00010030 input_state_scaled eol 128000 sub eol abs eol 26000 lt eol mul eol not eol mul eol 8000 store eol eol /* Compute the polar angle with 0 degrees = up, 90 = right, -90 = left. */ eol 7000 recall eol 8000 recall eol -1000 mul eol atan2 eol 9000 store eol eol /* Apply radial deadzone and ramp, then store the active radius in R10. */ eol 7000 recall eol dup mul eol 8000 recall eol dup mul eol add eol sqrt eol 127000 min eol 26000 lt eol 0 eol 7000 recall eol dup mul eol 8000 recall eol dup mul eol add eol sqrt eol 127000 min eol 26000 sub eol 127000 mul eol 101000 div eol ifte eol 10000 store eol eol /* Up uses the 4DIR overlap sector around 0 degrees. */ eol 9000 recall eol abs eol 67500 gt eol not eol 10000 recall eol 6350 gt eol mul eol 21000 store eol eol /* Down uses the 4DIR overlap sector around 180 / -180 degrees. */ eol 9000 recall eol abs eol 112500 gt eol 10000 recall eol 6350 gt eol mul eol 22000 store eol eol /* Left uses the 4DIR overlap sector from -157.5 to -22.5 degrees. */ eol 9000 recall eol -157500 gt eol 9000 recall eol -22500 lt eol mul eol 10000 recall eol 6350 gt eol mul eol 23000 store eol eol /* Right uses the 4DIR overlap sector from 22.5 to 157.5 degrees. */ eol 9000 recall eol 22500 gt eol 9000 recall eol 157500 lt eol mul eol 10000 recall eol 6350 gt eol mul eol 24000 store eol eol /* Inner ring is active below 0.75 radius, after the activity threshold. */ eol 10000 recall eol 6350 gt eol 10000 recall eol 95250 lt eol mul eol 25000 store eol eol /* Outer ring is active at or above 0.75 radius, after the activity threshold. */ eol 10000 recall eol 6350 gt eol 10000 recall eol 95250 lt eol not eol mul eol 26000 store",
-        "/* Store snapped right stick X in R3. */ eol 0x00010032 input_state_scaled eol 128000 sub eol 0x00010035 input_state_scaled eol 128000 sub eol abs eol 0x00010032 input_state_scaled eol 128000 sub eol abs eol gt eol 0x00010035 input_state_scaled eol 128000 sub eol abs eol 26000 lt eol mul eol not eol mul eol 3000 store eol eol /* Store snapped right stick Y in R4. */ eol 0x00010035 input_state_scaled eol 128000 sub eol 0x00010032 input_state_scaled eol 128000 sub eol abs eol 0x00010035 input_state_scaled eol 128000 sub eol abs eol gt eol 0x00010032 input_state_scaled eol 128000 sub eol abs eol 26000 lt eol mul eol not eol mul eol 4000 store eol eol /* Compute the polar angle with 0 degrees = up, 90 = right, -90 = left. */ eol 3000 recall eol 4000 recall eol -1000 mul eol atan2 eol 5000 store eol eol /* Compute the snapped stick radius and clamp it to the normalized max. */ eol 3000 recall eol dup mul eol 4000 recall eol dup mul eol add eol sqrt eol 127000 min eol 6000 store eol eol /* Up: angle in [-22.5, 22.5], only near full stick deflection. */ eol 5000 recall eol abs eol 22500 gt eol not eol 6000 recall eol 120000 gt eol mul eol 11000 store eol eol /* Up-right: angle in (22.5, 67.5), only near full stick deflection. */ eol 5000 recall eol 22500 gt eol 5000 recall eol 67500 lt eol mul eol 6000 recall eol 120000 gt eol mul eol 12000 store eol eol /* Right: angle in [67.5, 112.5], only near full stick deflection. */ eol 5000 recall eol 67500 gt eol 5000 recall eol 112500 lt eol mul eol 6000 recall eol 120000 gt eol mul eol 13000 store eol eol /* Down-right: angle in (112.5, 157.5), only near full stick deflection. */ eol 5000 recall eol 112500 gt eol 5000 recall eol 157500 lt eol mul eol 6000 recall eol 120000 gt eol mul eol 14000 store eol eol /* Down: angle in [157.5, 180] or [-180, -157.5], only near full stick deflection. */ eol 5000 recall eol 157500 gt eol 5000 recall eol -157500 lt eol bitwise_or eol 6000 recall eol 120000 gt eol mul eol 15000 store eol eol /* Down-left: angle in (-157.5, -112.5), only near full stick deflection. */ eol 5000 recall eol -157500 gt eol 5000 recall eol -112500 lt eol mul eol 6000 recall eol 120000 gt eol mul eol 16000 store eol eol /* Left: angle in [-112.5, -67.5], only near full stick deflection. */ eol 5000 recall eol -112500 gt eol 5000 recall eol -67500 lt eol mul eol 6000 recall eol 120000 gt eol mul eol 17000 store eol eol /* Up-left: angle in (-67.5, -22.5), only near full stick deflection. */ eol 5000 recall eol -67500 gt eol 5000 recall eol -22500 lt eol mul eol 6000 recall eol 120000 gt eol mul eol 18000 store",
-        "",
-        "",
-        "",
-        "",
-        ""
-    ],
-    "quirks": [
-        {
-            "vendor_id": "0x054c",
-            "product_id": "0x0df2",
-            "interface": 3,
-            "report_id": 1,
-            "usage": "0xfffa0009",
-            "bitpos": 120,
-            "size": 16,
-            "relative": false,
-            "signed": true
-        },
-        {
-            "vendor_id": "0x054c",
-            "product_id": "0x0df2",
-            "interface": 3,
-            "report_id": 1,
-            "usage": "0xfffa000a",
-            "bitpos": 136,
-            "size": 16,
-            "relative": false,
-            "signed": true
-        },
-        {
-            "vendor_id": "0x054c",
-            "product_id": "0x0df2",
-            "interface": 3,
-            "report_id": 1,
-            "usage": "0xfffa000b",
-            "bitpos": 152,
-            "size": 16,
-            "relative": false,
-            "signed": true
-        },
-        {
-            "vendor_id": "0x054c",
-            "product_id": "0x0df2",
-            "interface": 3,
-            "report_id": 1,
-            "usage": "0xfffa0002",
-            "bitpos": 263,
-            "size": 1,
-            "relative": false,
-            "signed": false
-        },
-        {
-            "vendor_id": "0x054c",
-            "product_id": "0x0df2",
-            "interface": 3,
-            "report_id": 1,
-            "usage": "0xfffa0006",
-            "bitpos": 295,
-            "size": 1,
-            "relative": false,
-            "signed": false
-        },
-        {
-            "vendor_id": "0x054c",
-            "product_id": "0x0df2",
-            "interface": 3,
-            "report_id": 1,
-            "usage": "0xfffa0010",
-            "size": 1,
-            "bitpos": 78,
-            "relative": false,
-            "signed": false
-        },
-        {
-            "vendor_id": "0x054c",
-            "product_id": "0x0df2",
-            "interface": 3,
-            "report_id": 1,
-            "usage": "0xfffa0011",
-            "size": 1,
-            "bitpos": 79,
-            "relative": false,
-            "signed": false
-        }
-    ]
+  "version": 18,
+  "unmapped_passthrough_layers": [],
+  "partial_scroll_timeout": 1000000,
+  "tap_hold_threshold": 200000,
+  "gpio_debounce_time_ms": 5,
+  "interval_override": 0,
+  "our_descriptor_number": 0,
+  "ignore_auth_dev_inputs": false,
+  "macro_entry_duration": 1,
+  "gpio_output_mode": 0,
+  "input_labels": 0,
+  "normalize_gamepad_inputs": false,
+  "mappings": [
+    {
+      "target_usage": "0x00010030",
+      "source_usage": "0xfff50001",
+      "scaling": 1000,
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "target_usage": "0x00010031",
+      "source_usage": "0xfff50002",
+      "scaling": 700,
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0x00090008",
+      "target_usage": "0x00090001",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0x00090007",
+      "target_usage": "0x00090002",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0x00090002",
+      "target_usage": "0x00070009",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0x00090003",
+      "target_usage": "0x00070019",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0x00090001",
+      "target_usage": "0x00070015",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0x00090004",
+      "target_usage": "0x00070017",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff90001",
+      "target_usage": "0x00070050",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff90002",
+      "target_usage": "0x0007004f",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff90003",
+      "target_usage": "0x00070052",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff90004",
+      "target_usage": "0x00070051",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0x00090005",
+      "target_usage": "0x00070014",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0x00090006",
+      "target_usage": "0x00070008",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfffa0011",
+      "target_usage": "0x0007002c",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfffa0010",
+      "target_usage": "0x000700e1",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0x0009000e",
+      "target_usage": "0x00070010",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0x0009000a",
+      "target_usage": "0x00070029",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0x00090009",
+      "target_usage": "0x0007002b",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff50015",
+      "target_usage": "0x0007001a",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff50016",
+      "target_usage": "0x00070016",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff50017",
+      "target_usage": "0x00070004",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff50018",
+      "target_usage": "0x00070007",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0x0009000b",
+      "target_usage": "0x0007000d",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0x0009000c",
+      "target_usage": "0x00070027",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff50019",
+      "target_usage": "0x0007000f",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff5000b",
+      "target_usage": "0x00070021",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff5000c",
+      "target_usage": "0x00070024",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff5000d",
+      "target_usage": "0x00070020",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff5000e",
+      "target_usage": "0x00070023",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff5000f",
+      "target_usage": "0x0007001f",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff50010",
+      "target_usage": "0x00070022",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff50011",
+      "target_usage": "0x0007001e",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    },
+    {
+      "source_usage": "0xfff50012",
+      "target_usage": "0x00070025",
+      "layers": [0],
+      "sticky": false,
+      "tap": false,
+      "hold": false,
+      "scaling": 1000,
+      "source_port": 0,
+      "target_port": 0
+    }
+  ],
+  "macros": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "expressions": [
+    "/* Inspired by Alpakka firmware by Input Labs: https://inputlabs.io/ */ eol /* Purpose: map gyro movement to relative mouse X/Y with touch gating and a soft curve. */ eol /* Mappable registers: R1 = mouse X delta, R2 = mouse Y delta. */ eol eol /* Read gyro axis used for mouse X */ eol 0xfffa000a input_state eol eol /* Small raw values stay at 0 to suppress drift */ eol dup abs 10000 gt mul eol eol /* Apply base sensitivity and invert direction */ eol -2 mul eol eol /* Require at least one active touch contact */ eol 0xfffa0002 input_state not eol 0xfffa0006 input_state not eol bitwise_or eol mul eol eol /* Keep scaled X in temp register 31 */ eol 31000 store eol eol /* Condition: use soft curve only for |x| < 1 */ eol 31000 recall abs 1000 lt eol eol /* Soft shaping: sign(x) * (0.5 * |x|) / (1 - 0.5 * |x|) */ eol 31000 recall sign 31000 recall abs 500 mul 1000 31000 recall abs 500 mul sub div mul eol eol /* Linear fallback for |x| >= 1 */ eol 31000 recall eol eol /* Choose shaped value for small inputs, linear value otherwise */ eol ifte eol eol /* Store final mouse X delta in register 1 */ eol 1000 store eol eol /* Read gyro axis used for mouse Y */ eol 0xfffa0009 input_state eol eol /* Small raw values stay at 0 to suppress drift */ eol dup abs 10000 gt mul eol eol /* Apply base sensitivity and invert direction */ eol -2 mul eol eol /* Require at least one active touch contact */ eol 0xfffa0002 input_state not eol 0xfffa0006 input_state not eol bitwise_or eol mul eol eol /* Keep scaled Y in temp register 32 */ eol 32000 store eol eol /* Condition: use soft curve only for |y| < 1 */ eol 32000 recall abs 1000 lt eol eol /* Soft shaping: sign(y) * (0.5 * |y|) / (1 - 0.5 * |y|) */ eol 32000 recall sign 32000 recall abs 500 mul 1000 32000 recall abs 500 mul sub div mul eol eol /* Linear fallback for |y| >= 1 */ eol 32000 recall eol eol /* Choose shaped value for small inputs, linear value otherwise */ eol ifte eol eol /* Store final mouse Y delta in register 2 */ eol 2000 store eol eol /* Dummy expression result */ eol 0 eol",
+    "/* Inspired by Alpakka firmware by Input Labs: https://inputlabs.io/ */ eol /* Purpose: classify the left stick into overlapping 4DIR outputs plus inner/outer ring state. */ eol /* Mappable registers: R21 = up, R22 = down, R23 = left, R24 = right, R25 = inner, R26 = outer. */ eol eol /* Store snapped left stick X in R7. */ eol 0x00010030 input_state_scaled eol 128000 sub eol 0x00010031 input_state_scaled eol 128000 sub eol abs eol 0x00010030 input_state_scaled eol 128000 sub eol abs eol gt eol 0x00010031 input_state_scaled eol 128000 sub eol abs eol 26000 lt eol mul eol not eol mul eol 7000 store eol eol /* Store snapped left stick Y in R8. */ eol 0x00010031 input_state_scaled eol 128000 sub eol 0x00010030 input_state_scaled eol 128000 sub eol abs eol 0x00010031 input_state_scaled eol 128000 sub eol abs eol gt eol 0x00010030 input_state_scaled eol 128000 sub eol abs eol 26000 lt eol mul eol not eol mul eol 8000 store eol eol /* Compute the polar angle with 0 degrees = up, 90 = right, -90 = left. */ eol 7000 recall eol 8000 recall eol -1000 mul eol atan2 eol 9000 store eol eol /* Apply radial deadzone and ramp, then store the active radius in R10. */ eol 7000 recall eol dup mul eol 8000 recall eol dup mul eol add eol sqrt eol 127000 min eol 26000 lt eol 0 eol 7000 recall eol dup mul eol 8000 recall eol dup mul eol add eol sqrt eol 127000 min eol 26000 sub eol 127000 mul eol 101000 div eol ifte eol 10000 store eol eol /* Up uses the 4DIR overlap sector around 0 degrees. */ eol 9000 recall eol abs eol 67500 gt eol not eol 10000 recall eol 6350 gt eol mul eol 21000 store eol eol /* Down uses the 4DIR overlap sector around 180 / -180 degrees. */ eol 9000 recall eol abs eol 112500 gt eol 10000 recall eol 6350 gt eol mul eol 22000 store eol eol /* Left uses the 4DIR overlap sector from -157.5 to -22.5 degrees. */ eol 9000 recall eol -157500 gt eol 9000 recall eol -22500 lt eol mul eol 10000 recall eol 6350 gt eol mul eol 23000 store eol eol /* Right uses the 4DIR overlap sector from 22.5 to 157.5 degrees. */ eol 9000 recall eol 22500 gt eol 9000 recall eol 157500 lt eol mul eol 10000 recall eol 6350 gt eol mul eol 24000 store eol eol /* Inner ring is active below 0.75 radius, after the activity threshold. */ eol 10000 recall eol 6350 gt eol 10000 recall eol 95250 lt eol mul eol 25000 store eol eol /* Outer ring is active at or above 0.75 radius, after the activity threshold. */ eol 10000 recall eol 6350 gt eol 10000 recall eol 95250 lt eol not eol mul eol 26000 store eol",
+    "/* Inspired by Alpakka firmware by Input Labs: https://inputlabs.io/ */ eol /* Purpose: classify the right stick into exclusive 8DIR outputs using stick angle near full deflection. */ eol /* Mappable registers: R11 = up, R12 = up-right, R13 = right, R14 = down-right, R15 = down, R16 = down-left, R17 = left, R18 = up-left. */ eol eol /* Store snapped right stick X in R3. */ eol 0x00010032 input_state_scaled eol 128000 sub eol 0x00010035 input_state_scaled eol 128000 sub eol abs eol 0x00010032 input_state_scaled eol 128000 sub eol abs eol gt eol 0x00010035 input_state_scaled eol 128000 sub eol abs eol 26000 lt eol mul eol not eol mul eol 3000 store eol eol /* Store snapped right stick Y in R4. */ eol 0x00010035 input_state_scaled eol 128000 sub eol 0x00010032 input_state_scaled eol 128000 sub eol abs eol 0x00010035 input_state_scaled eol 128000 sub eol abs eol gt eol 0x00010032 input_state_scaled eol 128000 sub eol abs eol 26000 lt eol mul eol not eol mul eol 4000 store eol eol /* Compute the polar angle with 0 degrees = up, 90 = right, -90 = left. */ eol 3000 recall eol 4000 recall eol -1000 mul eol atan2 eol 5000 store eol eol /* Compute the snapped stick radius and clamp it to the normalized max. */ eol 3000 recall eol dup mul eol 4000 recall eol dup mul eol add eol sqrt eol 127000 min eol 6000 store eol eol /* Up: angle in [-22.5, 22.5], only near full stick deflection. */ eol 5000 recall eol abs eol 22500 gt eol not eol 6000 recall eol 120000 gt eol mul eol 11000 store eol eol /* Up-right: angle in (22.5, 67.5), only near full stick deflection. */ eol 5000 recall eol 22500 gt eol 5000 recall eol 67500 lt eol mul eol 6000 recall eol 120000 gt eol mul eol 12000 store eol eol /* Right: angle in [67.5, 112.5], only near full stick deflection. */ eol 5000 recall eol 67500 gt eol 5000 recall eol 112500 lt eol mul eol 6000 recall eol 120000 gt eol mul eol 13000 store eol eol /* Down-right: angle in (112.5, 157.5), only near full stick deflection. */ eol 5000 recall eol 112500 gt eol 5000 recall eol 157500 lt eol mul eol 6000 recall eol 120000 gt eol mul eol 14000 store eol eol /* Down: angle in [157.5, 180] or [-180, -157.5], only near full stick deflection. */ eol 5000 recall eol 157500 gt eol 5000 recall eol -157500 lt eol bitwise_or eol 6000 recall eol 120000 gt eol mul eol 15000 store eol eol /* Down-left: angle in (-157.5, -112.5), only near full stick deflection. */ eol 5000 recall eol -157500 gt eol 5000 recall eol -112500 lt eol mul eol 6000 recall eol 120000 gt eol mul eol 16000 store eol eol /* Left: angle in [-112.5, -67.5], only near full stick deflection. */ eol 5000 recall eol -112500 gt eol 5000 recall eol -67500 lt eol mul eol 6000 recall eol 120000 gt eol mul eol 17000 store eol eol /* Up-left: angle in (-67.5, -22.5), only near full stick deflection. */ eol 5000 recall eol -67500 gt eol 5000 recall eol -22500 lt eol mul eol 6000 recall eol 120000 gt eol mul eol 18000 store eol",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "quirks": [
+    {
+      "vendor_id": "0x054c",
+      "product_id": "0x0df2",
+      "interface": 3,
+      "report_id": 1,
+      "usage": "0xfffa0009",
+      "bitpos": 120,
+      "size": 16,
+      "relative": false,
+      "signed": true
+    },
+    {
+      "vendor_id": "0x054c",
+      "product_id": "0x0df2",
+      "interface": 3,
+      "report_id": 1,
+      "usage": "0xfffa000a",
+      "bitpos": 136,
+      "size": 16,
+      "relative": false,
+      "signed": true
+    },
+    {
+      "vendor_id": "0x054c",
+      "product_id": "0x0df2",
+      "interface": 3,
+      "report_id": 1,
+      "usage": "0xfffa000b",
+      "bitpos": 152,
+      "size": 16,
+      "relative": false,
+      "signed": true
+    },
+    {
+      "vendor_id": "0x054c",
+      "product_id": "0x0df2",
+      "interface": 3,
+      "report_id": 1,
+      "usage": "0xfffa0002",
+      "bitpos": 263,
+      "size": 1,
+      "relative": false,
+      "signed": false
+    },
+    {
+      "vendor_id": "0x054c",
+      "product_id": "0x0df2",
+      "interface": 3,
+      "report_id": 1,
+      "usage": "0xfffa0006",
+      "bitpos": 295,
+      "size": 1,
+      "relative": false,
+      "signed": false
+    },
+    {
+      "vendor_id": "0x054c",
+      "product_id": "0x0df2",
+      "interface": 3,
+      "report_id": 1,
+      "usage": "0xfffa0010",
+      "size": 1,
+      "bitpos": 78,
+      "relative": false,
+      "signed": false
+    },
+    {
+      "vendor_id": "0x054c",
+      "product_id": "0x0df2",
+      "interface": 3,
+      "report_id": 1,
+      "usage": "0xfffa0011",
+      "size": 1,
+      "bitpos": 79,
+      "relative": false,
+      "signed": false
+    }
+  ]
 }
