@@ -30,12 +30,21 @@ mouse layout.
 Some parts are already organized into reusable expression files:
 
 - [expression_1_gyro.txt](./expressions/expression_1_gyro.txt)
+- [expression_1_gyro_calibration.txt](./expressions/expression_1_gyro_calibration.txt)
 - [expression_2_left_sticks_4dir_inner_outer.txt](./expressions/expression_2_left_sticks_4dir_inner_outer.txt)
 - [expression_3_right_stick_8dir.txt](./expressions/expression_3_right_stick_8dir.txt)
 
 The current exported profile file is:
 
 - [ds-edge-hid-remapper-config.json](./profiles/ds-edge-hid-remapper-config.json)
+
+The exported JSON should be understood as a solid base configuration for
+further tuning, not as a fixed final setup. If needed, individual expressions
+can be swapped out without rebuilding the whole profile logic. For example,
+there is an alternative gyro expression with auto-calibration and residual
+drift filtering:
+
+- [expression_1_gyro_calibration.txt](./expressions/expression_1_gyro_calibration.txt)
 
 ## Inspiration
 
