@@ -65,6 +65,7 @@ Useful project links:
 - HID Remapper manual: https://www.remapper.org/manual/
 - HID Remapper configuration tool: https://www.remapper.org/config/
 - HID Remapper forum: https://forum.remapper.org/
+- Project discussion thread: https://forum.remapper.org/t/dualsense-edge-as-mouse-keyboard-with-gyro-touch-activation/278
 - HID Remapper GitHub repository: https://github.com/jfedor2/hid-remapper
 
 ## Inspiration
