@@ -1,0 +1,10 @@
+/* Purpose: convert the DualSense Edge Fn1/Fn2 buttons into a continuous vertical scroll expression. */
+/* Result: +1 while Fn1 is held, -1 while Fn2 is held, 0 otherwise. */
+
+/* Fn1 held: scroll in the positive direction while pressed. */
+0xfffa0012 input_state_binary
+
+/* Fn2 held: scroll in the negative direction while pressed. */
+0xfffa0012 input_state_binary
+0xfffa0013 input_state_binary
+sub
