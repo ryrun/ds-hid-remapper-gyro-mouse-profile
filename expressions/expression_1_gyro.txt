@@ -9,7 +9,7 @@
 dup abs 10 gt mul
 
 /* Apply base sensitivity and invert direction */
--0.004 mul
+-0.003 mul
 
 /* Require at least one active touch contact */
 0xfffa0002 input_state not
@@ -42,7 +42,7 @@ ifte
 dup abs 10 gt mul
 
 /* Apply base sensitivity and invert direction */
--0.004 mul
+-0.003 mul
 
 /* Require at least one active touch contact */
 0xfffa0002 input_state not
