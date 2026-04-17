@@ -52,6 +52,28 @@ front function buttons:
 
 - [expression_4_fn_scrolling.txt](./expressions/expression_4_fn_scrolling.txt)
 
+## Current Mapping
+
+The current JSON profile maps the DualSense Edge inputs as follows:
+
+| Input | Output | Notes |
+| --- | --- | --- |
+| Gyro | Mouse X / Mouse Y | via expression-based gyro mouse logic |
+| Left stick | `W` / `A` / `S` / `D` | via 4-direction stick expression |
+| Left stick inner ring | `L` | via left stick ring detection |
+| D-pad | Arrow keys | up/down/left/right |
+| Cross / Circle / Square / Triangle | `R` / `F` / `V` / `T` | face button cluster |
+| `L1` / `R1` | `Q` / `E` | shoulder buttons |
+| `L2` / `R2` | Right mouse / Left mouse | trigger buttons |
+| Create / Options | `Tab` / `Esc` | menu buttons |
+| L3 / R3 | `J` / `0` | stick press buttons |
+| Touchpad Click | `M` | touch contact itself is used separately for gyro activation |
+| PS button | `Enter` | system button |
+| Mute button | `F12` | microphone mute button |
+| Back paddles | `Left Shift` / `Space` | DualSense Edge rear buttons |
+| Right stick 8 directions | `1` to `8` | via 8-direction stick expression |
+| Fn buttons | Vertical scroll | via dedicated Fn scroll expression |
+
 ## HID Remapper
 
 This profile depends directly on the HID Remapper project by Jacek Fedorynski.
