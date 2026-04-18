@@ -1,6 +1,7 @@
 /* Inspired by Alpakka firmware by Input Labs: https://inputlabs.io/ */
 /* Purpose: classify the left stick into overlapping 4DIR outputs plus inner/outer ring state. */
 /* Mappable registers: R21 = up, R22 = down, R23 = left, R24 = right, R25 = inner, R26 = outer. */
+/* Temp registers: R7 = snapped X, R8 = snapped Y, R9 = stick angle, R10 = active radius. */
 
 /* Store snapped left stick X in R7. */
 0x00010030 input_state_scaled

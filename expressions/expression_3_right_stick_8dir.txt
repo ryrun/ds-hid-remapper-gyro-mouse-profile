@@ -1,6 +1,7 @@
 /* Inspired by Alpakka firmware by Input Labs: https://inputlabs.io/ */
 /* Purpose: classify the right stick into exclusive 8DIR outputs using stick angle near full deflection. */
 /* Mappable registers: R11 = up, R12 = up-right, R13 = right, R14 = down-right, R15 = down, R16 = down-left, R17 = left, R18 = up-left. */
+/* Temp registers: R3 = snapped X, R4 = snapped Y, R5 = stick angle, R6 = stick radius. */
 
 /* Store snapped right stick X in R3. */
 0x00010032 input_state_scaled
