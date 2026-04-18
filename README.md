@@ -1,4 +1,4 @@
-# DualSense Gyro Mouse Profile
+# DualSense Gyro Mouse Profile (Dualpakka)
 
 This repository contains a HID Remapper profile for turning a Sony DualSense
 controller into a gyro mouse setup.
