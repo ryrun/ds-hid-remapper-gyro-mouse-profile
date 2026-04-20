@@ -16,9 +16,11 @@ bitwise_or
 0xfffa0009 input_state
 30 store
 
-/* Only calibrate while untouched and nearly still on both axes. */
+/* Only calibrate while untouched and nearly still on all gyro axes. */
 29 recall abs 12 lt
 30 recall abs 12 lt
+mul
+0xfffa000b input_state abs 12 lt
 mul
 20 recall not
 mul
