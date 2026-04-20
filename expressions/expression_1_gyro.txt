@@ -1,7 +1,7 @@
 /* Inspired by Alpakka firmware by Input Labs: https://inputlabs.io/ */
 /* Purpose: map gyro movement to relative mouse X/Y with touch gating and a soft curve. */
 /* Mappable registers: R1 = mouse X delta, R2 = mouse Y delta. */
-/* Temp registers: R31 = filtered X, R32 = filtered Y. */
+/* Frame-local temp registers: R31 = filtered X, R32 = filtered Y. */
 
 /* Read gyro axis used for mouse X */
 0xfffa000a input_state
